@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv').config();
 
 var app = express();
 
@@ -27,7 +28,11 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-  res.render('contact');
+  res.render('contact',
+    {
+      webmail: 'hsvbeute@gmail.com'
+    });
+
 });
 
 app.post('/send', (req, res) => {
@@ -49,7 +54,7 @@ app.post('/send', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'ricard.ribatallada@gmail.com', // generated ethereal user
-      pass: 'carmineisserenade' // generated ethereal password
+      pass: dotenv.process.env.MAIL_PASS // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
