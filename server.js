@@ -3,12 +3,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv/config');
 
 var app = express();
 
 const port = process.env.PORT || 3000;
-
+console.log(process.env.MAIL_PASS);
 
 //VIEW ENGINE SETUP
 
@@ -54,7 +54,7 @@ app.post('/send', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'ricard.ribatallada@gmail.com', // generated ethereal user
-      pass: dotenv.process.env.MAIL_PASS // generated ethereal password
+      pass: process.env.MAIL_PASS // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
@@ -64,7 +64,7 @@ app.post('/send', (req, res) => {
   // setup email data with unicode symbols
   let mailOptions = {
     from: '"Ricard Ribatallada" <ricard.ribatallada@gmail.com>', // sender address
-    to: 'ricard.ribatallada@gmail.com,hsvbeute@gmail.com', // list of receivers
+    to: 'ricard.ribatallada@gmail.com', // list of receivers
     subject: 'Contact request', // Subject line
     text: 'Hello world', // plain text body
     html: output // html body
