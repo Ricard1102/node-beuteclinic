@@ -3,12 +3,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
-const dotenv = require('dotenv/config');
+require('dotenv/config');
 
 var app = express();
 
 const port = process.env.PORT || 3000;
-console.log(process.env.MAIL_PASS);
 
 //VIEW ENGINE SETUP
 
@@ -30,7 +29,11 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.render('contact',
     {
-      webmail: 'hsvbeute@gmail.com'
+      webmail: 'hsvbeute@gmail.com',
+      twitter_url: '',
+      facebook_url: 'https://www.facebook.com/thebeuteclinic/',
+      googleplus_url: '',
+      linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
     });
 
 });
@@ -54,7 +57,7 @@ app.post('/send', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'ricard.ribatallada@gmail.com', // generated ethereal user
-      pass: process.env.MAIL_PASS // generated ethereal password
+      pass: carmineisserenade // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
