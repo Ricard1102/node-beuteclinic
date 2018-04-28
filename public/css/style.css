@@ -11,10 +11,15 @@ body {
   background: #fff;
   color: #666666;
   font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  margin: 0;
 
 }
 
-
+.fa{
+  margin: 0px 8px;
+  font-size: 24px;
+}
 
 a {
   color: #03c4eb;
@@ -110,18 +115,7 @@ h6 {
 --------------------------------------------------------------*/
 
 
-@media (max-width: 420px)
-{
-  #hero {
-    display: table;
-    width: 100%;
-    max-width: 420px;
-    height: 100vh;
-    /*background: url(../img/medipedi.jpg) top center fixed;*/
-    background:  url(../img/IMG_9641-min.JPG) top center fixed;
-   background-size: 420px 720px;
-  }
-}
+
 
 #hero {
   display: table;
@@ -130,8 +124,22 @@ h6 {
   /*background: url(../img/medipedi.jpg) top center fixed;*/
   background:  url(../img/IMG_9641-min.JPG) top center fixed;
   background-size: cover;
+
 }
 
+@media (max-width: 600px)
+{
+  #hero {
+    display: table;
+    width: 100%;
+    max-width: 420px;
+    height: 100vh;
+    /*background: url(../img/medipedi.jpg) top center fixed;*/
+    /*background:rgba(87, 0, 87, 0.9);*/
+    background:  url(../img/IMG_9641-min.JPG) top center fixed;
+   background-size: 1020px 720px;
+  }
+}
 
 
 
@@ -232,6 +240,7 @@ h6 {
   background: grey;
   padding: 20px 0;
   height: 90px;
+  margin: 0;
 }
 
 #header #logo {
@@ -275,6 +284,7 @@ h6 {
 .is-sticky #header {
   background: grey;
   opacity: 1;
+  width: 100%;
   /* background: rgba(0, 0, 0, 0.85);*/
 }
 
@@ -426,7 +436,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(87, 0, 87, 0.9);/*rgba(0, 0, 0, 0.9);*/
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -474,6 +484,7 @@ h6 {
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
   color: #03c4eb;
+ 
 }
 
 #mobile-nav ul .menu-item-active {
