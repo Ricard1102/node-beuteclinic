@@ -555,19 +555,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 20px;
 }
 
-@media (max-width: 600px)
-{
-  #about .about-container {
-    
-    width: 100%;
-    max-width: 420px;
-  
-    /*background: url(../img/medipedi.jpg) top center fixed;*/
-    /*background:rgba(87, 0, 87, 0.9);*/
-    background:  url(../img/IMG_9641-min.JPG) top center fixed;
-   background-size: 100% 720px;
-  }
-}
+
 
 
 #about .about-content {
@@ -599,6 +587,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 80px 0 60px 0;
 }
+
+@media (max-width: 600px)
+{
+  #services {
+    
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+        rgba(168, 168, 168, 0.7)  /* rgba(133, 27, 143, 0.3),
+        rgba(168, 168, 168, 0.7)*/), url(../img/IMG_9644.JPG) fixed center center;
+    background-size: cover;
+   background-size: 700px 100%;
+  }
+}
+
 
 #services .service-item {
   margin-bottom: 20px;
