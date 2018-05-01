@@ -551,8 +551,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container {
 
-  background: url(../img/bg4-min.jpg) left top no-repeat;
+  background: url(../img/about.png) left top no-repeat;
   border-radius: 20px;
+  background-size: 800px 620px;
 }
 
 
@@ -595,11 +596,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100%;
     max-width: 420px;
     background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
+      rgba(180, 180, 180, 0.5),
         rgba(168, 168, 168, 0.7)  /* rgba(133, 27, 143, 0.3),
-        rgba(168, 168, 168, 0.7)*/), url(../img/IMG_9644.JPG) fixed center center;
+     rgba(168, 168, 168, 0.7)*/)/*, url(../img/IMG_9644.JPG) fixed center center;
     background-size: cover;
-   background-size: 700px 100%;
+   background-size: 700px 100%;*/
   }
 }
 

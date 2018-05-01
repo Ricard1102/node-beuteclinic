@@ -30,6 +30,23 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.render('home.hbs',
     {
+      //Head.hbs variables
+      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute',
+      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough',
+      pageTitle: 'The Beute Clinic',
+
+      //Header.hbs variables
+      logo: 'public/img/logohannah.png',
+      logoCaption: 'Beute Clinic logo',
+      logoTitle: 'Welcome to the Beute Clinic',
+      // menu1: '',
+      // menu2: '',
+      // menu3: '',
+      // menu4: '',
+      // menu5: '',
+      //Hero variables
+      h1Title: 'Welcome to The Beute Clinic',
+
       webmail: 'hsvbeute@gmail.com',
       twitter_url: '',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
