@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
+const hbs = require('hbs');
 const nodemailer = require('nodemailer');
 require('dotenv/config');
 
@@ -10,9 +11,9 @@ var app = express();
 const port = process.env.PORT || 3000;
 
 //VIEW ENGINE SETUP
-
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+hbs.registerPartials(__dirname + '/views/partials');
+//app.engine('hbs', exphbs());
+app.set('view engine', 'hbs');
 
 //STATIC FOLDER
 
@@ -27,7 +28,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-  res.render('contact',
+  res.render('home.hbs',
     {
       webmail: 'hsvbeute@gmail.com',
       twitter_url: '',
@@ -52,12 +53,12 @@ app.post('/send', (req, res) => {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: 'gmail',
-    //host: 'smtp.google.com',
+    host: 'smtp.google.com',
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'ricard.ribatallada@gmail.com', // generated ethereal user
-      pass: carmineisserenade // generated ethereal password
+      pass: 'carmineisserenade' // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
@@ -79,12 +80,10 @@ app.post('/send', (req, res) => {
       return console.log(error);
     }
     console.log('Message sent: %s', info.messageId);
-    // Preview only available when sending through an Ethereal account
+
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
     res.render('contact', { msg: 'Email has been sent' });
 
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   });
 
 });
