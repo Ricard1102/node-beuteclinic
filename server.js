@@ -52,6 +52,10 @@ app.get('/', (req, res) => {
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
       googleplus_url: '',
       linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
+
+      //Maps
+      address: 'Unit K, The Wagon Yard, London Road, Marlborough SN8 1LH',
+      map_link: 'https://www.google.co.uk/maps/place/The+Beute+Clinic/@51.420501,-1.726128,15z/data=!4m2!3m1!1s0x0:0x7157a3cfd58b1f7b?sa=X&ved=0ahUKEwjmsJbLpOfaAhUKDMAKHRq0AMQQ_BIIfjAK'
     });
 
 });

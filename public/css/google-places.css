@@ -1,3 +1,14 @@
+#map {
+  height: 400px;
+  width: 100%;
+ }
+
+ .map p{
+height: 20px;
+padding: 1px auto;
+margin: 2px auto;
+ }
+
 #map-plug {display:none;}
 
 #google-reviews {
