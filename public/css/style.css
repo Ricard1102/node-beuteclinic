@@ -7,12 +7,34 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+
+
+
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+
+
+html{
+
+padding: 0;
+margin: 0;
+width: 100%;}
+
 body {
   background: #fff;
   color: #666666;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   margin: 0;
+  padding: 0;
 
 }
 
@@ -124,6 +146,7 @@ h6 {
   /*background: url(../img/medipedi.jpg) top center fixed;*/
   background:  url(../img/IMG_9641-min.JPG) top center fixed;
   background-size: cover;
+  margin: 0;
 
 }
 
@@ -152,7 +175,10 @@ h6 {
 }
 
 #hero .hero-container {
-  background: rgba(223, 37, 223, 0.322);
+  /* background: rgba(223, 37, 223, 0.322); THIS IS THE ORIGINAL ONE */
+  background: rgba(204, 109, 198, 0.685);
+  /* background: linear-gradient( #ED42E1, #FFB6F2) ; */
+  
   /* background: rgba(241, 227, 241, 0.3);*/
   /*background: rgba(171, 50, 241, 0.8);*/
   display: table-cell;
@@ -235,6 +261,9 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
+
 #header {
   /*background: #111;*/
   background: grey;
@@ -352,6 +381,7 @@ h6 {
 #nav-menu-container {
   float: right;
   margin: 5px 0;
+ 
 }
 
 @media (max-width: 768px) {
@@ -549,13 +579,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#about .about-container {
 
-  background: url(../img/about.png) left top no-repeat;
-  border-radius: 20px;
-  background-size: 800px 620px;
+
+
+
+#about .about-img {
+
+ background: url(../img/about-min.png) center center no-repeat;
+  background-size: 900px 1000px;
+  min-height: 300px;
+  /*background-size: cover;*/
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+
+  margin-bottom:30px;
 }
 
+@media (min-width: 800px) {
+
+  #about .about-img {
+
+    background: url(../img/about-min.png) center center no-repeat;
+     min-height: 520px;
+     background-size: 900px 600px;
+     border-radius: 3px;
+     -webkit-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+     -moz-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+     box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
+     
+   }
+
+  }
 
 
 
@@ -567,6 +623,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
   font-weight: 700;
   font-size: 28px;
+  margin: 20px 0;
 }
 
 #about .about-text {
@@ -587,6 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       rgba(168, 168, 168, 0.7)*/), url(../img/IMG_9644.JPG) fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
+  width: 100%;
 }
 
 @media (max-width: 600px)
