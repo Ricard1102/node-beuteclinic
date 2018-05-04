@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const hbs = require('hbs');
 const nodemailer = require('nodemailer');
-require('dotenv/config');
+// require('dotenv/config');
 
 var app = express();
 
@@ -51,18 +51,21 @@ app.get('/', (req, res) => {
       twitter_url: '',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
       googleplus_url: '',
+      instagram_url: '',
       linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
 
       //Maps
-      address: 'Unit K, The Wagon Yard, London Road, Marlborough SN8 1LH',
+      address: 'Unit K, The Wagon Yard, London Road, Marlborough, SN8 1LH',
       map_link: 'https://www.google.co.uk/maps/place/The+Beute+Clinic/@51.420501,-1.726128,15z/data=!4m2!3m1!1s0x0:0x7157a3cfd58b1f7b?sa=X&ved=0ahUKEwjmsJbLpOfaAhUKDMAKHRq0AMQQ_BIIfjAK',
 
       //Services variables
       cancellationPolicy1: 'The Beute Clinic operates a cancellation policy. Our policy is similar to many other medical clinics and we ask all patients kindly to adhere to it.',
       cancellationPolicy2: 'Should you wish to cancel or reschedule an appointment we simply ask you to give a minimum of 24 hours notice for our shorter 30 minute appointments and 48 hours notice for our longer appointments such as our biomechanical assessments, nail surgery appointments and home visits. If this minimum is not adhered to, we reserve the right to charge the full treatment cost of the appointment.',
-      cancellationPolicy3: 'We are aware that from time to time individual circumstances dictate that an appointment will be missed or less than the 24 hours notice will be given. On such occasions we can be lenient but frequent missed appointments can be very disruptive to the smooth running of the clinic and can also be inconvenient to other patients that require an appointment slot'
+      cancellationPolicy3: 'We are aware that from time to time individual circumstances dictate that an appointment will be missed or less than the 24 hours notice will be given. On such occasions we can be lenient but frequent missed appointments can be very disruptive to the smooth running of the clinic and can also be inconvenient to other patients that require an appointment slot',
 
 
+      //Contact Variables
+      businessPhone: '01672288943, 07707697396'
 
 
 
@@ -87,11 +90,11 @@ app.post('/send', (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.google.com',
-    port: 587,
+    port: 25, //587
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'ricard.ribatallada@gmail.com', // generated ethereal user
-      pass: 'carmineisserenade' // generated ethereal password
+      user: 'business.mailer.service@gmail.com', // generated ethereal user
+      pass: 'ultimateBI_1989' // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
@@ -100,7 +103,7 @@ app.post('/send', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: '"Ricard Ribatallada" <ricard.ribatallada@gmail.com>', // sender address
+    from: '"Mailer" <business.mailer.service@gmail.com>', // sender address
     to: 'ricard.ribatallada@gmail.com', // list of receivers
     subject: 'Contact request', // Subject line
     text: 'Hello world', // plain text body
@@ -108,7 +111,10 @@ app.post('/send', (req, res) => {
   };
 
   // send mail with defined transport object
+
+
   transporter.sendMail(mailOptions, (error, info) => {
+
     if (error) {
       return console.log(error);
     }
@@ -124,6 +130,8 @@ app.post('/send', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
+
+console.log('Email service starting...');
 
 
 

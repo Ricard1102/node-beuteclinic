@@ -178,8 +178,9 @@ h6 {
 
 #hero .hero-container {
   /* background: rgba(223, 37, 223, 0.322); THIS IS THE ORIGINAL ONE */
-  background: rgba(204, 109, 198, 0.685);
-  /* background: linear-gradient( #ED42E1, #FFB6F2) ; */
+  /* background: rgba(204, 109, 198, 0.685); */
+  /* background: rgba(168, 37, 185, 0.623); */
+  background: linear-gradient( rgba(249, 206, 255, 0.623), rgba(168, 37, 185, 0.623)) ;
   
   /* background: rgba(241, 227, 241, 0.3);*/
   /*background: rgba(171, 50, 241, 0.8);*/
@@ -315,7 +316,7 @@ h6 {
 }
 
 .is-sticky #header {
-  background: #706778;
+  background: #2c2c2c;
   opacity: 1;
   width: 100%;
   /* background: rgba(0, 0, 0, 0.85);*/
@@ -982,15 +983,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 } */
 
 #contact i {
-  font-size: 28px;
+  font-size: 30px;
   color: #03c4eb;
   
+  height: 50px;
+  width: 60px;
 
-  background: grey;
- 
+  padding: 10px 0 5px 0;
+  text-align: center;
+vertical-align: middle;
 
 }
 
+#contact details{
+  height: 100px;
+}
 
 #contact p {
   line-height: 24px;
