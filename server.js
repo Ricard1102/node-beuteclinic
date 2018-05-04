@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const hbs = require('hbs');
 const nodemailer = require('nodemailer');
-// require('dotenv/config');
+require('dotenv/config');
 
 var app = express();
 
@@ -31,8 +31,8 @@ app.get('/', (req, res) => {
   res.render('home.hbs',
     {
       //Head.hbs variables
-      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute',
-      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough',
+      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist',
+      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book and appointment with one of our excellent podiatrists or visit the website to check the treatments available',
       pageTitle: 'The Beute Clinic',
 
       //Header.hbs variables
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
       twitter_url: '',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
       googleplus_url: '',
-      instagram_url: '',
+      instagram_url: 'https://www.instagram.com/explore/locations/1690143194594857/hannah-beute-clinic/',
       linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
 
       //Maps
@@ -93,8 +93,8 @@ app.post('/send', (req, res) => {
     port: 25, //587
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'business.mailer.service@gmail.com', // generated ethereal user
-      pass: 'ultimateBI_1989' // generated ethereal password
+      user: process.env.MAIL_USER, // generated ethereal user
+      pass: process.env.MAIL_PASS // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
@@ -103,8 +103,8 @@ app.post('/send', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: '"Mailer" <business.mailer.service@gmail.com>', // sender address
-    to: 'ricard.ribatallada@gmail.com', // list of receivers
+    from: process.env.MAIL_FROM, // sender address
+    to: process.env.MAIL_TO, // list of receivers
     subject: 'Contact request', // Subject line
     text: 'Hello world', // plain text body
     html: output // html body
@@ -121,7 +121,10 @@ app.post('/send', (req, res) => {
     console.log('Message sent: %s', info.messageId);
 
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-    res.render('home', { msg: 'Email has been sent' });
+
+    res.render('partials/thanks', { businessName: 'The Beute Clinic' });
+
+
 
   });
 
@@ -131,7 +134,7 @@ app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
 
-console.log('Email service starting...');
+
 
 
 
