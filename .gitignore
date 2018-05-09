@@ -1,3 +1,4 @@
 node_modules/
 .env
 archive
+views/partials/fleet.hbs

@@ -31,8 +31,8 @@ app.get('/', (req, res) => {
   res.render('home.hbs',
     {
       //Head.hbs variables
-      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist',
-      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book and appointment with one of our excellent podiatrists or visit the website to check the treatments available',
+      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist, medi peri marlborough',
+      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book and appointment with one of our excellent podiatrists or visit the website to check the treatments available (medi peri, diabetic foot assessment, biomechanics, verrucae treatments,...)',
       pageTitle: 'The Beute Clinic',
 
       //Header.hbs variables
@@ -82,6 +82,7 @@ app.post('/send', (req, res) => {
     <li>Name: ${req.body.name}</li>
     <li>Email: ${req.body.email}</li>
     <li>Phone: ${req.body.phone}</li>
+    <li>Treatment: ${req.body.treatment}</li>
     <li>Subject: ${req.body.subject}</li>
     <li>Message: ${req.body.message}</li>
     </ul>`;

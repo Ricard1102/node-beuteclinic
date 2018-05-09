@@ -597,8 +597,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-img {
 
- background: url(../img/beute1.jpg) center center no-repeat;
-  background-size: 900px 1000px;
+ background: url(../img/about.JPG) center center no-repeat;
+  background-size: 700px 1000px;
   min-height: 300px;
   /*background-size: cover;*/
   border-radius: 3px;
@@ -613,9 +613,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #about .about-img {
 
-    background: url(../img/beute1.jpg) center center no-repeat;
+    background: url(../img/about.JPG) center center no-repeat;
      min-height: 520px;
-     background-size: 900px 600px;
+     background-size: 700px 600px;
      border-radius: 3px;
      -webkit-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
      -moz-box-shadow: 0px 4px 36px 7px rgba(0,0,0,0.2);
@@ -1093,7 +1093,7 @@ vertical-align: middle;
 .box {
   background: rgb(255, 255, 255);
   padding: 30px 0 2px 4px;
-  height: 260px;
+  min-height: 360px;
   border-radius: 6px;
   /* -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
@@ -1101,6 +1101,7 @@ vertical-align: middle;
   -webkit-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
   -moz-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
   box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
+  overflow-y: scroll;
 }
 
 .pic {
@@ -1115,10 +1116,7 @@ vertical-align: middle;
 # Thanks
 --------------------------------------------------------------*/
 
-#thanks{
 
-
-}
 
 #thanks h2 {
   
@@ -1137,3 +1135,59 @@ vertical-align: middle;
   color: #fff;
 }
 
+
+/*--------------------------------------------------------------
+# Collpase
+--------------------------------------------------------------*/
+
+.btn-collapse {
+  background: rgba(179, 19, 144, 0.6);
+  
+  /* color: rgb(179, 19, 144); */
+  /* border: 2px solid rgba(179, 19, 144,0.8); */
+  color: #fff;
+  box-shadow: 0 0 0 0 rgba(179, 19, 144,0.6);
+  min-width: 200px;
+margin-top:3px;
+margin-bottom: 5px;
+}
+
+.btn-collapse:hover {
+  background: pink;
+  /* border: 2px solid pink; */
+  color: rgba(179, 19, 144, 0.6);
+
+}
+.pulse{
+  -webkit-animation: pulse 2s infinite cubic-bezier(0.5, 0, 0, 1);
+  -moz-animation: pulse 2s infinite cubic-bezier(0.5, 0, 0, 1);
+  -ms-animation: pulse 2s infinite cubic-bezier(0.5, 0, 0, 1);
+  animation: pulse 2s infinite cubic-bezier(0.5, 0, 0, 1);
+}
+
+.pulse:hover{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  -webkit-transition: 1s; 
+}
+
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);}}
+
+
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+
+select{
+  border: 1px solid rgba(165, 163, 163, 0.445);
+  color:grey;
+  border-radius: 0px;
+  min-width: 100%;
+  padding: 2px 0;
+  height: 32px;
+}
