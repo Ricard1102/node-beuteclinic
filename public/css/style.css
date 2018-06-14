@@ -145,7 +145,7 @@ h6 {
   height: 100vh;
   /*background: url(../img/medipedi.jpg) top center fixed;*/
   /* background:  url(../img/IMG_9641-min.JPG) top center fixed; */
-  background:  url(../img/IMG_9623.jpg) top center fixed;
+  background:  url(../img/IMG_9623.JPG) top center fixed;
   background-size: cover;
   margin: 0;
 
@@ -161,7 +161,7 @@ h6 {
     /*background: url(../img/medipedi.jpg) top center fixed;*/
     /*background:rgba(87, 0, 87, 0.9);*/
     /* background:  url(../img/IMG_9641-min.JPG) top center fixed; */
-    background:  url(../img/img_9623.jpg) top center fixed;
+    background:  url(../img/img_9623.JPG) top center fixed;
    background-size: 1020px 720px;
   }
 }
