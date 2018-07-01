@@ -77,15 +77,17 @@
               <div class="form-group">
                 <select id="treatment" name="treatment">
                   <option value="Choose a treatment">Choose a treatment</option>
-                  <option value="First visit and assessm.">First visit and assessm.</option>
-                  <option value="Repeat visit">Repeat visit</option>
-                  <option value="Pronto">Pronto</option>
-                  <option value="Medi peri">Medi peri</option>
-                  <option value="Diabetic foot assessm.">Diabetic foot assessm.</option>
-                  <option value="Nail Surgery">Nail Surgery</option>
-                  <option value="Verruca Treatment">Verruca Treatment</option>
-                  <option value="Biomechanical assessm.">Biomechanical assessm.</option>
-                  <option value="Orthotics">Orthotics</option>
+                  <option value="First visit and assessm.">{{treatment1}}</option>
+                  <option value="Repeat visit">{{treatment2}}</option>
+                  <option value="Pronto">{{treatment3}}</option>
+                  <option value="Medi peri">{{treatment4}}</option>
+                  <option value="Diabetic foot assessm.">{{treatment5}}</option>
+                  <option value="Nail Surgery">{{treatment6}}</option>
+                  <option value="Verruca Treatment">{{treatment7}}</option>
+                  <option value="Biomechanical assessm.">{{treatment8}}</option>
+                  <option value="Orthotics">{{treatment9}}</option>
+                  <option value="Orthotics">{{treatment10}}</option>
+                  <option value="Orthotics">{{treatment11}}</option>
                   <option value="Others">Others</option>
                 </select>
               </div>
@@ -102,6 +104,11 @@
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" name="gdpr" value="gdpr"> I have read and accept the
+                <a href="/privacy">privacy & GDPR policies</a>
+                <br>
               </div>
               <div class="text-center">
                 <button type="submit">Send Message</button>
