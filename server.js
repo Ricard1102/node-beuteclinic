@@ -82,11 +82,11 @@ app.get('/', (req, res) => {
       desc1a: '...to give you the highest quality service. During this first session your podiatrist will put together a plan of action, determining the length of time required for treatment, and arranging future appointments to fit your schedule.',
 
       treatment2: 'Repeat Visit',
-      desc2: 'After the first appointment, we provide 30 to 60-minute periodic treatments. Do you suffer from calluses, verrucaes, fungal infections or in-grown toe nails? Some foot problems require constance and…',
-      desc2a: '...several appointments to make sure that the treatment is effective. In the Beute Clinic we care about our patients and provide them with the service and care that only fully dedicated podiatrists can give.',
+      desc2: 'After the first appointment, we provide 30 to 60-minute treatments periodically. Do you suffer from calluses, verrucae, fungal infections or in-grown toe nails? Some foot problems require...',
+      desc2a: '...several appointments to make sure that the treatment is effective. In the Beute Clinic we care about our patients and aim to provide them with the best service and care that our fully dedicated podiatrists can give.',
 
       treatment3: 'Pronto',
-      desc3: 'Pronto is the treatment you need if you need an appointment for nail care ang you only have 20 minutes. With this treatment, the podiatrist takes care of a single problem area for patients that have little time...',
+      desc3: 'Pronto is the treatment you need if you only have a limited amount of time. Within this 20 minute treatment, the podiatrist will take care of a single problem area for patients that have to hit and run...',
       desc3a: '...but still want the best treatment and the best products in foot care.',
 
       treatment4: 'Medi Pedi',
@@ -98,20 +98,19 @@ app.get('/', (req, res) => {
       desc5a: '...fungus, ingrown / overgrown toenails, and nail discolouration, are assessed and treated. Then.  Your feet are pampered with a luxurious Soak, Scrub, and brushed with warm paraffin wax that sooths aching joints and improves circulation, while softening hard and rough skin.  Next.  Your feet are placed in heated boots to allow moisture to penetrate the dermal layers of your skin, after which the nails are coated with a polish of your choice. Finally. Your feet and legs are revitalised with a massage using a specially-formulated, handmade pedicure cream. So the indulgence can continue beyond your appointment, we’ll prepare for you a free goodie bag to take home.',
 
       treatment6: 'Manly Pedi',
-      desc6: 'A restorative gentleman’s foot treatment combining the benefits of cosmetic nail contouring and buffing with the indulgence of a foot soak, scrub, and lower leg massage. A treat for the sense and...',
-      desc6a: '...a healthy way to relax and recover the comfort of healthy well-cared feet.',
+      desc6: 'A restorative gentleman’s foot treatment combining the benefits of cosmetic nail contouring and buffing with the indulgence of a foot soak, scrub, and lower leg massage. A treat for the senses and...',
+      desc6a: '...a healthy way to relax and discover the comfort of healthy well-cared feet.',
 
       treatment7: 'Diabetic Foot Assessment',
-      desc7: 'In depth analysis of the feet to discover any loss of protective sensation and to measure blood flow to the feet using ultrasound.  A full report of the assessment is provided...',
-      desc7a: '...Diabetes treatment is a speciality of The Beute Clinic. Our podiatrists have a combined fourteen years of experience working in the field and remain up to date with the latest research and practices.',
-
+      desc7: 'In depth analysis of the feet to discover any loss of protective sensation and to measure blood flow to the feet using ultrasound. A full report of the assessment is provided...',
+      desc7a: '...Diabetes treatment is a speciality of The Beute Clinic. Our podiatrists have years of experience working in the field and remain up to date with the latest research and practices.',
       treatment8: 'Nail Surgery',
-      desc8: 'A one-hour appointment to remove part or all of a toenail. Phenolic acid is used to ensure the offending portion of nail does not grow back.  None-phenolic surgery is also provided dependant of personal preferences...',
+      desc8: 'A one-hour appointment to remove part or all of a toenail. Phenol which is an acid is used to ensure the offending portion of nail does not grow back. None-phenolic surgery is also provided dependant of personal preferences...',
       desc8a: '...though the most suitable course of action will be suggested by your podiatrist.',
 
       treatment9: 'Verruca Treatment',
-      desc9: 'A 30-minute session during which the skin cells affected by the verruca virus will be treated with the aim of gradual removal. Verrucae lesions can be resilient if they manage to infect deeper layers of skin...',
-      desc9a: '...We typically use liquid nitrogen and salicylic acid to freeze and thaw the area, thereby destroying the skin cells affected by the virus.  Multiple appointments may therefore be required; your podiatrist will discuss this with you during your initial assessment.',
+      desc9: 'As part of your treatment with The Beute Clinic, or as the result of ongoing conditions or outpatient procedures; you may require wound care. Feet can be very sensitive, and wounds...',
+      desc9a: '...on your feet can often take more time to heal. It’s important that wounds are correctly monitored, treated, and dressed to ensure clean, healthy healing. If the problem area is associated with another medical issue or is the result of a medical procedure conducted elsewhere, we will ensure communication is made with relevant health practitioners to maximise the healing process.',
 
       treatment10: 'Biomechanical Assessment',
       desc10: 'An assessment of the way your lower limbs function, checking for irregularities and possible causes of pain in the foot, ankle, knee, and back. Most people carry muscular or...',
