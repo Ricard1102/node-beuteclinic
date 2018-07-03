@@ -8,8 +8,15 @@
     <div class="row justify-content-md-center">
       <div class="col-xs-12">
         <p>
+          <strong>{{pageTitle}}</strong>
+        </p>
+        <p>
           <a href="{{map_link}}">
-            <strong>{{pageTitle}}</strong> {{address}}</a>
+            {{address}}</a>
+        </p>
+        <p>
+          <a href="{{map_link2}}">
+            {{address2}}</a>
         </p>
       </div>
     </div>
@@ -21,14 +28,22 @@
   <script>
     function initMap() {
       var uluru = { lat: 51.420501, lng: -1.726128 };
+      var alma = { lat: 51.4622555, lng: -2.6169094 };
+      inbetween = { lat: 51.4622555, lng: -2 }
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 17,
-        center: uluru
+        zoom: 10,
+        center: inbetween
       });
       var marker = new google.maps.Marker({
         position: uluru,
         map: map
       });
+      var marker2 = new google.maps.Marker({
+        position: alma,
+        map: map
+      });
+
+
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAILk-KjSRSeXsJYn7GF82mLUWR0qZ9N_k&callback=initMap">

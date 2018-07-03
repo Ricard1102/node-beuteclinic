@@ -65,7 +65,9 @@ app.get('/', (req, res) => {
 
       //Maps
       address: 'Unit K, The Wagon Yard, London Road, Marlborough, SN8 1LH',
+      address2: '11 Alma Vale Rd, Bristol BS8 2HL',
       map_link: 'https://www.google.co.uk/maps/place/The+Beute+Clinic/@51.420501,-1.726128,15z/data=!4m2!3m1!1s0x0:0x7157a3cfd58b1f7b?sa=X&ved=0ahUKEwjmsJbLpOfaAhUKDMAKHRq0AMQQ_BIIfjAK',
+      map_link2: 'https://www.google.co.uk/maps/place/11+Alma+Vale+Rd,+Bristol+BS8+2HL/@51.4622555,-2.6169094,17z/data=!3m1!4b1!4m5!3m4!1s0x48718dc3d4b42d6f:0x477c59fae9de64b0!8m2!3d51.4622555!4d-2.6147207',
 
       //Services variables
       cancellationPolicy1: 'The Beute Clinic operates a cancellation policy. Our policy is similar to many other medical clinics and we ask all patients kindly to adhere to it.',
