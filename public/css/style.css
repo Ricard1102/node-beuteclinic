@@ -879,7 +879,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
-  background: #cecece;
+  background: #f5f4f4;
   padding: 80px 0;
 }
 
@@ -1549,3 +1549,25 @@ color: white;
 .read-more > a:hover{
 color: black;
 }
+/* 
+#maps-section .address-holder{
+  margin: 1px 0;
+}
+
+@media (max-width: 600px){
+  #maps-section .address-holder{
+    margin: 1px 0;
+    height: 300px;
+  }
+} */
+
+@media (max-width: 600px){
+  #maps-section .address-holder{
+    min-height: 180px;
+  }
+}
+
+#maps-section .address-holder{
+  min-height: 60px;
+}
+

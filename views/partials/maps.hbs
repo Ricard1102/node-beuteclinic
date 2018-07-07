@@ -4,23 +4,30 @@
 
 
 <section id="maps-section">
-  <div class="container map">
-    <div class="row justify-content-md-center">
-      <div class="col-xs-12">
-        <p>
-          <strong>{{pageTitle}}</strong>
-        </p>
-        <p>
-          <a href="{{map_link}}">
-            {{address}}</a>
-        </p>
-        <p>
-          <a href="{{map_link2}}">
-            {{address2}}</a>
-        </p>
-      </div>
+
+  <div class="row">
+    <div class="container address-holder" style="margin:2% 1%;">
+
+      <p class="">
+        <strong>{{pageTitle}}</strong>
+        <br/>
+        <br/>
+        <a href="{{map_link}}">
+          {{address}}</a>
+
+        <br/>
+        <a href="{{map_link2}}">
+          {{address2}}</a>
+
+        <br/>
+        <a href="{{map_link3}}">
+          {{address3}}</a>
+      </p>
+
+
     </div>
   </div>
+
 
 
   <div id="map">
@@ -29,9 +36,10 @@
     function initMap() {
       var uluru = { lat: 51.420501, lng: -1.726128 };
       var alma = { lat: 51.4622555, lng: -2.6169094 };
-      inbetween = { lat: 51.4622555, lng: -2 }
+      var todd = { lat: 51.598777, lng: -1.734586 };
+      inbetween = { lat: 51.522555, lng: -2.2 }
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 9,
         center: inbetween
       });
       var marker = new google.maps.Marker({
@@ -42,6 +50,10 @@
         position: alma,
         map: map
       });
+      var marker3 = new google.maps.Marker({
+        position: todd,
+        map: map
+      })
 
 
     }
