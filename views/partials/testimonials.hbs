@@ -10,78 +10,63 @@
         <p class="section-description">Read what other patients of the clinic think about us</p>
       </div>
     </div>
-
-    <div class="container">
-
+  </div>
 
 
-
-
-
-      <div id="fb-root"></div>
-      <p>
-        <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-      </p>
-
-      <div style="min-height:410px;">
-        <div style="max-width:98%; padding:1px 1px;" class="fb-post" data-href="https://www.facebook.com/felicity.graciee/activity/10155338349922489"
-          data-width="280">
-        </div>
-        <div style="max-width:98%; padding:1px 1px;" class="fb-post" data-href="https://www.facebook.com/rob.hay.509/activity/1968985306664927"
-          data-width="280">
-        </div>
-        <div style="max-width:98%; padding:1px 1px;" class="fb-post" data-href="https://www.facebook.com/773149426/activity/10155625691044427"
-          data-width="280">
-        </div>
-      </div>
-
-
-      <div class="col-xs-12">
-        <div id="google-reviews"></div>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
-        <script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js "></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAILk-KjSRSeXsJYn7GF82mLUWR0qZ9N_k&signed_in=true&libraries=places "></script>
-
-        <script>
-          jQuery(document).ready(function ($) {
-            $("#google-reviews").googlePlaces({
-              placeId: 'ChIJM63sJx1acUgRex-L1c-jV3E' //Find placeID @: https://developers.google.com/places/place-id
-              , render: ['reviews']
-              , min_rating: 4
-              , max_rows: 1
-            });
-          });
-        </script>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12">
-          <script language='javascript1.1'>
-            var nr_placeid = 'ChIJM63sJx1acUgRex-L1c-jV3E';
-            var nr_width = '100%';
-            var nr_height = 380;
-            var nr_directreviewbox = 0;
-            var nr_buttonCol = "df4a32 "; // Amend this value to change your review button colour (hex color values only rrggbb)
-            var nr_transparency = false; // Set this to true to have a transparent widget with no border
-          </script>
-          <script language='javascript1.1' src='https://www.netrite.net/google-review-code/googlereviews_ssl.js'></script>
-        </div>
+  <div class="container">
+    <div id="fb-root"></div>
+    <p>
+      <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    </p>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+      <div style="max-width:98%;" class="fb-post" data-href="https://www.facebook.com/felicity.graciee/activity/10155338349922489">
       </div>
     </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+      <div style="max-width:98%;" class="fb-post" data-href="https://www.facebook.com/rob.hay.509/activity/1968985306664927">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6col-md-4 col-lg-4 " style="max-width:98%;">
+      <div class="fb-post" data-href="https://www.facebook.com/773149426/activity/10155625691044427">
+      </div>
+    </div>
+  </div>
 
 
 
+  <div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAILk-KjSRSeXsJYn7GF82mLUWR0qZ9N_k&signed_in=true&libraries=places "></script>
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $("#google-reviews").googlePlaces({
+          placeId: 'ChIJM63sJx1acUgRex-L1c-jV3E' //Find placeID @: https://developers.google.com/places/place-id
+          , render: ['reviews']
+          , min_rating: 4
+          , max_rows: 1
+        });
+      });
+    </script>
 
 
-    {{!--
-    <div class="quote g-post " data-href="https://plus.google.com/110305096641053854518/posts/VDE662deNcT ">
 
-    </div> --}}
+    <script language='javascript1.1'>
+      var nr_placeid = 'ChIJM63sJx1acUgRex-L1c-jV3E';
+      var nr_width = '100%';
+      var nr_height = 400;
+      var nr_directreviewbox = 0;
+      var nr_buttonCol = "df4a32 "; // Amend this value to change your review button colour (hex color values only rrggbb)
+      var nr_transparency = false; // Set this to true to have a transparent widget with no border
+    </script>
+    <script language='javascript1.1' src='https://www.netrite.net/google-review-code/googlereviews_ssl.js'></script>
+
 
 
   </div>
+
+
 
 
 

@@ -26,9 +26,9 @@ padding:2em;
 flex: 10 10 20%;
 border-radius: 3px;
 background: white;
--webkit-box-shadow: 0px 14px 98px 13px rgba(255,246,201,1);
+/* -webkit-box-shadow: 0px 14px 98px 13px rgba(255,246,201,1);
 -moz-box-shadow: 0px 14px 98px 13px rgba(255,246,201,1);
-box-shadow: 0px 14px 98px 13px rgba(255,246,201,1);
+box-shadow: 0px 14px 98px 13px rgba(255,246,201,1); */
 
 }
 
@@ -61,10 +61,10 @@ margin-right: 1px;
 line-height:1;
 }
 
-.review-stars ul li i {
+/* .review-stars ul li i {
   color: #E4B248;
   font-size: 1.4em;
   font-style:normal;
-}
+} */
 .review-stars ul li i.inactive { color: #c6c6c6;}
 .star:after { content: "\2605"; }
