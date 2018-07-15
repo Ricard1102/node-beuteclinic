@@ -59,7 +59,8 @@ app.get('/', (req, res) => {
       webmail: 'hsvbeute@gmail.com',
       twitter_url: '',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
-      googleplus_url: '',
+      googleplus_url: 'https://plus.google.com/u/0/collection/Ax9pME',
+      youtube_url: '',
       instagram_url: 'https://www.instagram.com/explore/locations/1690143194594857/hannah-beute-clinic/',
       // linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
 
