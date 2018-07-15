@@ -57,7 +57,7 @@ app.get('/', (req, res) => {
       h1Title: 'Welcome to The Beute Clinic',
 
       webmail: 'hsvbeute@gmail.com',
-      twitter_url: '',
+      twitter_url: 'https://twitter.com/BeuteHannah',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
       googleplus_url: 'https://plus.google.com/u/0/collection/Ax9pME',
       youtube_url: '',
