@@ -30,7 +30,7 @@ app.get('/privacy', (req, res) => {
   res.render('privacy.hbs', {
     company: 'The Beute Clinic',
     phone: '+44 (0) 1672 288943',
-    mail: 'hsvbeute@gmail.com',
+    mail: 'ask@thebeuteclinic.com',
     address: 'Unit K, The Wagon Yard, London Road, Marlborough, SN8 1LH'
   });
 });
@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
       //Hero variables
       h1Title: 'Welcome to The Beute Clinic',
 
-      webmail: 'hsvbeute@gmail.com',
+      webmail: 'ask@thebeuteclinic.com',
       twitter_url: 'https://twitter.com/BeuteHannah',
       facebook_url: 'https://www.facebook.com/thebeuteclinic/',
       googleplus_url: 'https://plus.google.com/u/0/collection/Ax9pME',
