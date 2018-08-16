@@ -143,8 +143,8 @@ app.post('/send', (req, res) => {
     <li>Name: ${req.body.name}</li>
     <li>Email: ${req.body.email}</li>
     <li>Phone: ${req.body.phone}</li>
-    <li>Treatment: ${req.body.treatment}</li>
     <li>Subject: ${req.body.subject}</li>
+    <li>Treatment: ${req.body.treatment}</li>
     <li>Message: ${req.body.message}</li>
     <li>GDPR Consent: ${req.body.gdpr}</li>
     </ul>`;
@@ -192,7 +192,6 @@ app.post('/send', (req, res) => {
   });
 
 });
-
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
