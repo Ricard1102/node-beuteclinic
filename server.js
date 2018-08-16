@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const hbs = require('hbs');
 const nodemailer = require('nodemailer');
+const httpsRedirect = require('express-https-redirect');
+
+
 require('dotenv/config');
 
 var app = express();
@@ -25,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
+app.use('/', httpsRedirect());
 
 app.get('/privacy', (req, res) => {
   res.render('privacy.hbs', {
