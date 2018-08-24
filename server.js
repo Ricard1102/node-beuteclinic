@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
     {
       //Head.hbs variables
       keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist, medi peri marlborough',
-      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book and appointment with one of our excellent podiatrists or visit the website to check the treatments available (medi peri, diabetic foot assessment, biomechanics, verrucae treatments,...)',
+      metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book an appointment with one of our excellent podiatrists or visit the website to check the treatments available (medi peri, diabetic foot assessment, biomechanics, verrucae treatments,...)',
       pageTitle: 'The Beute Clinic',
 
       //Header.hbs variables

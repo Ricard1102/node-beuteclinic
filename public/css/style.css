@@ -1123,7 +1123,7 @@ vertical-align: middle;
 
 
 @media (max-width: 600px){
-  .box {
+ .box  {
     background: rgba(255, 255, 255,0.8);
     padding: 30px 0 0px 4px;
     min-height: 280px;
@@ -1571,3 +1571,16 @@ color: black;
   min-height: 60px;
 } */
 
+.map-box {
+  background: rgba(255, 255, 255,0.8);
+  padding: 0px 0 0px 0px;
+  min-height: 350px;
+  border-radius: 6px;
+  /* -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5); */
+  -webkit-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
+  -moz-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
+  box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
+  overflow-y: auto;
+}
