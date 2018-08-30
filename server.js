@@ -44,9 +44,9 @@ app.get('/', (req, res) => {
   res.render('home.hbs',
     {
       //Head.hbs variables
-      keywords: 'podiatry, podiatry Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist, medi peri marlborough',
+      keywords: 'podiatry, podiatry Marlborough, podiatrist in Marlborough, podiatry clinic, foot care, podiatry Swindon, Beute, chiropodist, medi peri marlborough',
       metaDescription: 'Welcome to the Beute Clinic, podiatry service and foot care specialists based in Marlborough. Book an appointment with one of our excellent podiatrists or visit the website to check the treatments available (medi peri, diabetic foot assessment, biomechanics, verrucae treatments,...)',
-      pageTitle: 'The Beute Clinic',
+      pageTitle: 'The Beute Clinic | Podiatrists in Marlborough',
 
       //Header.hbs variables
       logo: 'public/img/logohannah.png',
