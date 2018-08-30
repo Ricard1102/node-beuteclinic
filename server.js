@@ -19,7 +19,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
 //STATIC FOLDER
-
+app.use('/', httpsRedirect());
 app.use('/public', express.static(path.join(__dirname + '/public')));
 
 //BODY PARSER MIDDLEWARE
@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
-app.use('/', httpsRedirect());
+
 
 app.get('/privacy', (req, res) => {
   res.render('privacy.hbs', {
@@ -127,7 +127,7 @@ app.get('/', (req, res) => {
 
       treatment11: 'Wound care',
       desc11: 'As part of your treatment with The Beute Clinic, or as the result of ongoing conditions or outside procedures, you may require wound care. Feet can be very sensitive, and wounds...',
-      desc11a: '...on your feet can often take more time to heal due to the requirement of regular movement.  It’s important that wounds are correctly monitored, treated, and dressed to ensure clean, healthy healing. If the problem area is associated with another medical issue or is the result of a medical procedure conducted elsewhere, we will ensure communication is made with relevant health practitioners.',
+      desc11a: '...on your feet can often take more time to heal due to the requirement of regular movement.  It’s important that wounds are correctly monitored, treated, and dressed to ensure clean, healthy healing. If the problem area is associated with another medical issue or is the result of a medical procedure conducted elsewhere, we will ensure communication is made with relevant health practitioners.'
 
 
 
