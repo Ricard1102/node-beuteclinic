@@ -184,7 +184,7 @@ app.post('/send', (req, res) => {
 
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-    res.render('partials/thanks', { businessName: 'The Beute Clinic' });
+    res.render('views/partials/thanks', { businessName: 'The Beute Clinic' });
 
 
 
