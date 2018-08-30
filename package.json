@@ -19,6 +19,6 @@
     "express-handlebars": "^3.0.0",
     "express-https-redirect": "^1.0.0",
     "hbs": "^4.0.1",
-    "nodemailer": "^4.6.4"
+    "nodemailer": "^4.6.8"
   }
 }
