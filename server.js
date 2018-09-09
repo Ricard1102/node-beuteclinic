@@ -87,7 +87,7 @@ app.get('/', (req, res) => {
 
       //Services
       treatment1: 'Meet Your Podiatrist',
-      desc1: 'When did you go to a podiatrist for the last time?Foot care is key for a happy life. The initial one-hour appointment offered by the Beute Clinic will assess problem areas of your feet and ankles and collect relevant medical history...',
+      desc1: 'When was the last time you saw a podiatrist? Foot care is key for a happy life. The initial one-hour appointment offered by the Beute Clinic will assess problem areas of your feet and ankles and collect relevant medical history...',
       desc1a: '...to give you the highest quality service. During this first session your podiatrist will put together a plan of action, determining the length of time required for treatment, and arranging future appointments to fit your schedule.',
 
       treatment2: 'Repeat Visit',
