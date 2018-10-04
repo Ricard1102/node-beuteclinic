@@ -113,12 +113,18 @@
                 </select>
               </div>
 
-
-
-
-
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least  chars of subject"
+                <select id="clinic" name="clinic">
+                  <option value="Choose a treatment">Choose a clinic</option>
+                  <option value="Marlborough clinic">Marlborough clinic</option>
+                  <option value="Bristol clinic">Bristol clinic</option>
+                  <option value="Swindon clinic">Swindon clinic</option>
+                  <option value="Medi peri">{{treatment4}}</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject"
                 />
                 <div class="validation"></div>
               </div>
@@ -126,6 +132,7 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
+
               <div class="form-group">
                 <input type="checkbox" name="gdpr" value="gdpr"> I have read and accept the
                 <a href="/privacy">privacy & GDPR policies</a>
@@ -140,7 +147,6 @@
 
         </div>
       </div>
-
 
 
 

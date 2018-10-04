@@ -145,6 +145,7 @@ app.post('/send', (req, res) => {
     <li>Phone: ${req.body.phone}</li>
     <li>Subject: ${req.body.subject}</li>
     <li>Treatment: ${req.body.treatment}</li>
+    <li>Clinic: ${req.body.clinic}</li>
     <li>Message: ${req.body.message}</li>
     <li>GDPR Consent: ${req.body.gdpr}</li>
     </ul>`;
