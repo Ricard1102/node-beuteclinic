@@ -139,8 +139,6 @@
                 <a href="/privacy">privacy & GDPR policies</a>
                 <br>
               </div>
-              <div class="g-recaptcha" data-sitekey="6LcdWHYUAAAAAMppTe0oGpG9gtZ6FAmuvCb_CWzd"></div>
-              <br>
               <div class="text-center">
                 <button type="submit">Send Message</button>
               </div>
@@ -157,23 +155,7 @@
 
 
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#comment_form').submit(function () {
-          $(this).ajaxSubmit({
-            error: function (xhr) {
-              status('Error: ' + xhr.status);
-            },
-            success: function (response) {
-              console.log(response);
-            }
-          });
-          //Very important line, it disable the page refresh.
-          return false;
-        });
-      });
-    </script>
+
 </section>
 <!--==========================
   End of Contact Section
