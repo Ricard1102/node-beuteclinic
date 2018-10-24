@@ -157,59 +157,65 @@ app.post('/send', (req, res) => {
       return res.json({ "responseCode": 1, "responseDesc": "Failed captcha verification" });
     }
     res.json({ "responseCode": 0, "responseDesc": "Sucess" });
-  });
 
 
-  const output = `<p>You have a new contact request</p>
-  <h3>Contact Details</h3>
-  <ul>
-    <li>Name: ${req.body.name}</li>
-    <li>Email: ${req.body.email}</li>
-    <li>Phone: ${req.body.phone}</li>
-    <li>Subject: ${req.body.subject}</li>
-    <li>Treatment: ${req.body.treatment}</li>
-    <li>Clinic: ${req.body.clinic}</li>
-    <li>Message: ${req.body.message}</li>
-    <li>GDPR Consent: ${req.body.gdpr}</li>
-    </ul>`;
 
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    host: 'smtp.google.com',
-    port: 25, //587
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.MAIL_USER, // generated ethereal user
-      pass: process.env.MAIL_PASS // generated ethereal password
-    },
-    tls: {
-      rejectUnauthorized: false
-    }
-  });
+    const output = `<p>You have a new contact request</p>
+    <h3>Contact Details</h3>
+    <ul>
+      <li>Name: ${req.body.name}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Phone: ${req.body.phone}</li>
+      <li>Subject: ${req.body.subject}</li>
+      <li>Treatment: ${req.body.treatment}</li>
+      <li>Clinic: ${req.body.clinic}</li>
+      <li>Message: ${req.body.message}</li>
+      <li>GDPR Consent: ${req.body.gdpr}</li>
+      </ul>`;
 
-  // setup email data with unicode symbols
-  let mailOptions = {
-    from: process.env.MAIL_FROM, // sender address
-    to: process.env.MAIL_TO, // list of receivers
-    subject: 'Contact request', // Subject line
-    text: 'Hello world', // plain text body
-    html: output // html body
-  };
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      service: 'gmail',
+      host: 'smtp.google.com',
+      port: 25, //587
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.MAIL_USER, // generated ethereal user
+        pass: process.env.MAIL_PASS // generated ethereal password
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
+    });
 
-  // send mail with defined transport object
+    // setup email data with unicode symbols
+    let mailOptions = {
+      from: process.env.MAIL_FROM, // sender address
+      to: process.env.MAIL_TO, // list of receivers
+      subject: 'Contact request', // Subject line
+      text: 'Hello world', // plain text body
+      html: output // html body
+    };
+
+    // send mail with defined transport object
 
 
-  transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, (error, info) => {
 
-    if (error) {
-      return console.log(error);
-    }
-    console.log('Message sent: %s', info.messageId);
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
 
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-    res.render('partials/thanks', { businessName: 'The Beute Clinic' });
+      res.render('partials/thanks', { businessName: 'The Beute Clinic' });
+
+
+
+
+    });
+
 
   });
 
