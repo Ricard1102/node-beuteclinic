@@ -157,7 +157,7 @@ app.post('/send', (req, res) => {
       return res.json({ "responseCode": 1, "responseDesc": "Failed captcha verification" });
     }
     res.json({ "responseCode": 0, "responseDesc": "Sucess" });
-
+    res.render('partials/thanks', { businessName: 'The Beute Clinic' });
 
 
     const output = `<p>You have a new contact request</p>
@@ -209,7 +209,7 @@ app.post('/send', (req, res) => {
 
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-      res.render('partials/thanks', { businessName: 'The Beute Clinic' });
+
 
 
 
