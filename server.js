@@ -156,7 +156,7 @@ app.post('/send', (req, res) => {
     if (body.success !== undefined && !body.success) {
       return res.json({ "responseCode": 1, "responseDesc": "Failed captcha verification" });
     }
-    res.json({ "responseCode": 0, "responseDesc": "Sucess" });
+    // res.json({ "responseCode": 0, "responseDesc": "Sucess" });
     res.render('partials/thanks', { businessName: 'The Beute Clinic' });
 
 
