@@ -69,16 +69,16 @@ app.get('/', (req, res) => {
       // linkedin_url: 'https://www.linkedin.com/in/hannah-beute-356044151/',
 
       //Maps
-      address: 'Unit K, The Wagon Yard, London Road, Marlborough, SN8 1LH',
-      address2: '11 Alma Vale Rd, Bristol BS8 2HL',
-      address3: 'The Carl Todd Clinic. 5 The Courtyard, Copse Farm, Lancaster Place, Swindon SN3 4UQ',
-      address4: 'Newbury Clinic. 27 Craven Rd 27 Craven Rd, Newbury RG14 5NG',
-      address5: 'Salisbury Clinic. 61 Milford Street, Salisbury, SP1 2BP',
+      address: 'Marlborough Clinic, Unit K, The Wagon Yard, London Road, Marlborough, SN8 1LH',
+      address2: 'Bristol Clinic, 11 Alma Vale Rd, Bristol BS8 2HL',
+      address3: 'Carl Todd Clinic. 5 The Courtyard, Copse Farm, Lancaster Place, Swindon SN3 4UQ',
+      address4: 'Fairbourne Clinic, 17 Wendan Road, Newbury, Berkshire, RG14 7AG',
+      address5: 'Salisbury Clinic, 61 Milford Street, Salisbury, SP1 2BP',
       address6: 'Old Town Clinic, 28 Newport Street, Old Town, Swindon, SN1 3DX',
       map_link: 'https://www.google.co.uk/maps/place/The+Beute+Clinic/@51.420501,-1.726128,15z/data=!4m2!3m1!1s0x0:0x7157a3cfd58b1f7b?sa=X&ved=0ahUKEwjmsJbLpOfaAhUKDMAKHRq0AMQQ_BIIfjAK',
       map_link2: 'https://www.google.co.uk/maps/place/11+Alma+Vale+Rd,+Bristol+BS8+2HL/@51.4622555,-2.6169094,17z/data=!3m1!4b1!4m5!3m4!1s0x48718dc3d4b42d6f:0x477c59fae9de64b0!8m2!3d51.4622555!4d-2.6147207',
       map_link3: 'https://www.google.co.uk/maps/place/The+Carl+Todd+Clinic/@51.598777,-1.734586,15z/data=!4m2!3m1!1s0x0:0xf231b50b5595edf5?sa=X&ved=0ahUKEwiQr9XatI3cAhWNKewKHbW1CFcQ_BIIgAEwCg',
-      map_link4: 'https://www.google.co.uk/maps/place/27+Craven+Rd,+Newbury+RG14+5NG/@51.3989603,-1.3304218,17z/data=!3m1!4b1!4m5!3m4!1s0x4876a89e4425851d:0x5fdfd388e5a904e5!8m2!3d51.3989603!4d-1.3282331',
+      map_link4: 'https://www.google.com/maps/place/Wendan+Rd,+Newbury+RG14+7AG/data=!4m2!3m1!1s0x4876a882d4ecf49f:0xda2771057126858?sa=X&ved=2ahUKEwi-gJ3O8NnhAhWQQRUIHdCuDAQQ8gEwCnoECAsQBA',
       map_link5: 'https://www.google.com/maps/place/Milford+St,+Salisbury+SP1+2BP/data=!4m2!3m1!1s0x4873ebf6f9cb5bb1:0xfa28a0611935adf9?sa=X&ved=2ahUKEwio07aLotjhAhUpMuwKHQyBAYcQ8gEwCnoECAsQBA',
       map_link6: 'https://www.google.com/maps/place/Newport+St,+Swindon+SN1+3DX/data=!4m2!3m1!1s0x48714453c0fe3b3f:0x724ccc83d8b7c321?sa=X&ved=2ahUKEwil_MKhotjhAhXP0KQKHWvtAzMQ8gEwCnoECAoQBA',
       //Services variables
